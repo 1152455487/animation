@@ -1,0 +1,89 @@
+@charset "utf-8"
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.main{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+.main>ul{
+	height: 100%;
+	width: 3840px;
+	position: relative;
+}
+.main>ul>li{
+	height: 100%;
+	width: 100%;
+	background: url(./2.jpg);
+	float:right;
+	position: absolute;
+	animation:big 50s linear infinite;
+}
+@keyframes big{
+	0%{
+		right: 50%;
+	}
+	100%{
+		right:0%; 
+	}
+}
+.wk{
+	width: 200px;
+	height: 180px;
+	background:url(./1.png);
+	position: absolute;
+	top: 50%;
+	left:15%;
+	z-index: 10;
+	animation:wk 1s steps(8) infinite
+}
+@keyframes wk{
+	to{background-position: -1600px 0;}
+	}
+.bj{
+	width: 200px;
+	height: 180px;
+	background:url(./2.png);
+	position: absolute;
+	top: 50%;
+	left:30%;
+	z-index:10;
+	animation:bj 1s steps(8) infinite
+}
+@keyframes bj{
+	to{background-position: -1600px 0;}
+	}
+.ts{
+	width: 170px;
+	height: 240px;
+	background:url(./3.png);
+	position: absolute;
+	top: 45%;
+	left:45%;
+	z-index: 10;
+	animation:ts 1s steps(8) infinite
+}
+@keyframes ts{
+	to{background-position: -1360px 0;}
+	}
+.sj{
+	width: 210px;
+	height: 200px;
+	background:url(./4.png);
+	position: absolute;
+	top: 50%;
+	left:60%;
+	z-index: 10;
+	animation:sj 1s steps(8) infinite
+}
+@keyframes sj{
+	to{background-position: -1680px 0;}
+	}
